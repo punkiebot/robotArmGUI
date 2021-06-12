@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Robtt Arm GUI
+        </title>
+        <link href="./styles.css" rel="stylesheet" type="text/css">
+        </link>
+    </head>
+    <body>
+        <h1>
+            Interfaz grafica para controlar brazo robotico
+        </h1>
+
+        <div class="origin">
+        <div class="container">
+            <div class="box">
+                <p>
+                    M1
+                </p>
+                <input class="slider" id="myRangeM1" max="180" min="0" type="range" value="90">
+                </input>
+                <p>
+                    
+                    <span id="numeroM1">
+                        <!-- valor or defecto es 90 -->
+                        90°
+                    </span>
+                    
+                </p>
+            </div>
+            <!-- motor dos tiene rango inverso-->
+            <div class="box">
+                <p>
+                    M2
+                </p>
+                <input class="slider" id="myRangeM2" max="180" min="0" type="range" value="60">
+                </input>
+                <p>
+                  
+                    <span id="numeroM2">
+                        <!-- valor or defecto es 60 -->
+                        60°
+                    </span>
+                    
+                </p>
+            </div>
+
+
+            <div class="box">
+                <p>
+                    M3
+                </p>
+                <input class="slider" id="myRangeM3" max="180" min="0" type="range" value="120">
+                </input>
+                <p>
+                   
+                    <span id="numeroM3">
+                        <!-- valor or defecto es 120 -->
+                        120°
+                    </span>
+                    
+                </p>
+            </div>
+
+
+            <div class="box">
+                <p>
+                    M4
+                </p>
+                <input class="slider" id="myRangeM4" max="180" min="60" type="range" value="150">
+                </input>
+                <p>
+                    
+                    <span id="numeroM4">
+                        <!-- valor or defecto es 150, rango entre 60-180 -->
+                        150°
+                    </span>
+                    
+                </p>
+            </div>
+
+
+            <div class="box">
+                <p>
+                    M5
+                </p>
+                <input class="slider" id="myRangeM5" max="180" min="0" type="range" value="110">
+                </input>
+                <p>
+                    
+                    <span id="numeroM5">
+                        <!-- valor or defecto es 110 -->
+                        110°
+                    </span>
+                    
+                </p>
+            </div>
+
+
+            <div class="box">
+                <p>
+                    M6
+                </p>
+                <input class="slider" id="myRangeM6" max="60" min="0" type="range" value="50">
+                </input>
+                <p>
+                   
+                    <span id="numeroM6">
+                        <!-- valor or defecto es 40, va entre 0 y 60 -->
+                        40°
+                    </span>
+                    
+                </p>
+            </div>
+          
+        </div>
+
+
+        <div class="imagen">        
+            <img src="./robot1.png" alt="">
+        </div>
+
+
+        <div class="rutinas-container">
+            <div class="btn" id="rut1"><p>M1</p></div>
+            <div class="btn" id="rut2"><p>M2</p></div>
+            <div class="btn" id="rut3"><p>M3</p></div>
+            <div class="btn" id="rut4"><p>M4</p></div>
+            <div class="btn" id="rut5"><p>M5</p></div>
+            <div class="btn" id="rut6"><p>M6</p></div>
+            <div class="btn" id="rutAll"><p>All</p></div>
+            <div class="btn" id="def"><p>Default</p></div>
+        </div>
+
+    
+
+        </div>
+     
+
+    <script src="./front.js"></script>
+    </body>
+</html>
